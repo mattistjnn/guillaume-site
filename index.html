@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votre Site Vitrine</title>
-    <link rel="stylesheet" href="styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Votre Site Vitrine</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -60,9 +61,75 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Votre Entreprise. Tous droits réservés.</p>
+        <div class="theme-footer-one">
+            <div class="top-footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- Form Section -->
+                        <div class="col-md-6 form-container">
+                            <div class="col-lg-6">
+                                <form action="https://formspree.io/f/meqyobkz" method="POST">
+                                    <div class="form-group">
+                                        <label for="name">Nom:</label>
+                                        <input type="text" class="form-control" name="name" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" name="email" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="company">Entreprise/Société:</label>
+                                        <input type="text" class="form-control" name="company">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="message">Message:</label>
+                                        <textarea class="form-control" name="message" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                                </form>
+                            </div>
+                        </div>
+    
+                        <!-- Contact Information Section -->
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-12 col-sm-12 about-widget">
+                                    <h6 class="title">Une question ?</h6>
+                                    <div class="queries">
+                                        <a href="tel:0468401923">&#9742; 04 68 40 19 23</a><br>
+                                        <a href="mailto:contact@cats-btp.fr"><b>&#9993;</b> contact@cats-btp.fr</a><br>
+                                    </div>
+                                </div>
+    
+                                <!-- Business Hours Section -->
+                                <div class="col-xl-6 col-lg-12 col-sm-12 about-widget">
+                                    <div class="queries">
+                                        <b>&#x1F552; Horaires :</b><br>
+                                        Du lundi au jeudi - 8h00 à 18h00<br>
+                                        Le vendredi - 8h00 à 17h00<br>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Google Maps Section -->
+                            <div class="col-md-12 about-widget">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.3658814802925!2d1.3599919000000003!3d43.53641449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb75c44e67a57%3A0x321b965d600c2c4b!2sRESOLOGY!5e0!3m2!1sen!2sfr!4v1706014655088!5m2!1sen!2sfr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-
+    
+    
+        <button class="scroll-top tran3s">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </button>
+    </footer>
 </body>
 </html>
 
