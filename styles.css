@@ -1,8 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px; /* Adjust the height as needed */
 }
 
 header {
@@ -19,12 +32,37 @@ nav {
     padding: 10px;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items horizontally */
+}
+
+nav ul li {
+    margin: 0 15px;
+    transition: transform 0.3s ease; /* Animation de transition de déplacement */
+}
+
+nav ul li:hover {
+    transform: translateY(-3px); /* Déplacement vers le haut au survol */
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
 nav a {
     text-decoration: none;
     color: #fff;
-    margin: 0 15px;
+    transition: color 0.3s ease; /* Animation de transition de couleur */
 }
 
+nav a:hover {
+    color: #ffd700;
+}
 .dropdown {
     display: inline-block;
 }
@@ -89,8 +127,6 @@ nav a {
     margin: 0 auto;
 }
 
-<<<<<<< Updated upstream
-=======
 /* Top Footer styles */
 .top-footer {
     padding: 50px 0;
@@ -144,11 +180,6 @@ iframe {
 }
 
 /* Additional Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
+
 
 /* Add more styles as needed for your specific design preferences */
->>>>>>> Stashed changes
