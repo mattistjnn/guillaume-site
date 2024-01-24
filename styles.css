@@ -127,59 +127,101 @@ nav a:hover {
     margin: 0 auto;
 }
 
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.modern-footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4; /* Couleur de fond gris clair */
+}
+
+.footer-form,
+.footer-contact{
+    padding: 20px;
+    background-color: #ffffff; /* Couleur de fond blanc pour chaque section */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+.footer-map{
+    padding: 20px;
+    background-color: #ffffff; /* Couleur de fond blanc pour chaque section */
+    border-radius: 8px;
+    }
+
+.footer-map {
+    grid-column: span 1; /* La carte occupe une colonne sur petit écran */
+    margin: 0; /* Retire la marge pour remplir l'espace requis */
+}
+
+/* Media Query pour les écrans de taille moyenne */
+@media (min-width: 768px) {
+    .modern-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-map {
+        grid-column: span 2; /* La carte occupe deux colonnes sur les écrans de taille moyenne */
+        margin: 0; /* Retire la marge pour remplir l'espace requis */
+    }
+
+    .footer-contact {
+        order: 3; /* Change l'ordre pour placer le bloc "Contact" en dernier sur les écrans de taille moyenne */
+    }
+}
+
+/* Media Query pour les grands écrans */
+@media (min-width: 1200px) {
+    .modern-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
 /* Top Footer styles */
 .top-footer {
     padding: 50px 0;
+
 }
 
-/* Form styles */
-form {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-/* Adjust form position to the left */
-.form-container {
-    margin-right: 20px; /* Add some margin to the right for spacing */
-}
-
-/* Contact Information styles */
-.about-widget {
-    margin-bottom: 30px;
-}
-
-/* Google Maps styles */
-iframe {
+input,
+textarea {
     width: 100%;
-    height: 300px; /* Adjust the height as needed */
-    border: 1px solid #030303;
-    border-radius: 8px;
-    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
-/* Responsive styles */
-@media (max-width: 767px) {
-    form {
-        margin-top: 20px;
-    }
-
-    .form-container {
-        margin-right: 0; /* Reset margin for small screens */
-    }
-
-    .col-md-6 {
-        text-align: center;
-    }
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-
 @media (max-width: 991px) {
     .queries {
         text-align: center;
     }
 }
-
-/* Additional Styles */
-
-
-/* Add more styles as needed for your specific design preferences */
+}
