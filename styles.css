@@ -9,7 +9,7 @@ body {
 
 header {
     background-color: #333;
-    color: #fff;
+    color: #f4f4f4;
     padding: 10px;
     text-align: center;
 }
@@ -42,7 +42,6 @@ header {
 
 .link:hover {
     color: #ffd700;
-
 }
 
 .dropdown {
@@ -67,6 +66,7 @@ header {
 .welcome-section {
     text-align: center;
     padding: 40px;
+    margin: 20px 80px 20px 80px;
 }
 
 .intro-text {
@@ -108,13 +108,13 @@ body {
 .footer-form,
 .footer-contact{
     padding: 20px;
-    background-color: #ffffff; /* Couleur de fond blanc pour chaque section */
+    background-color: #f4f4f4; /* Couleur de fond blanc pour chaque section */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 .footer-map{
     padding: 20px;
-    background-color: #ffffff; /* Couleur de fond blanc pour chaque section */
+    background-color: #f4f4f4; /* Couleur de fond blanc pour chaque section */
     border-radius: 8px;
     }
 
@@ -152,6 +152,7 @@ body {
 
 .form-group {
     margin-bottom: 20px;
+}
 /* Top Footer styles */
 .top-footer {
     padding: 50px 0;
@@ -174,18 +175,24 @@ textarea {
     margin-bottom: 15px;
 }
 
-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 15px;
+.btn {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 12px 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    font-size: 1em;
 }
+
+.btn:hover {
+    color: #ffd700;
+}
+
 @media (max-width: 991px) {
     .queries {
         text-align: center;
     }
-}
 }
