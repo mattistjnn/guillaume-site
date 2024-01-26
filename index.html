@@ -6,34 +6,45 @@
         <title>Votre Site Vitrine</title>
         <link rel="stylesheet" href="styles.css">
         <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    
 </head>
 <body>
 
     <header>
         <img src="img/logo.png" alt="Image de présentation" class="presentation-image">
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Accueil</a></li>
-            <li class="dropdown">
-                <div class="test"><a class="dropbtn" href="#">Nos services</a></div>
-                <div class="dropdown-content">
-                    <a href="#">Hydroc</a>
-                    <a href="#">Test etan</a>
-                    <a href="#">Inspection tele</a>
-                    <a href="#">Recherche de fuite</a>
+
+    <nav class="navbar">
+        <ul class="navlist">
+
+            <li class="elementNav"><a href="#" class="link">Accueil</a></li>
+
+            <li class="elementNav">
+                <a href="#" class="link">Nos services</a>
+                <div class="dropdown">
+                    <div class="sousDropdown"><a href="#" class="link">Hydrocurage</a></div>
+                    <div class="sousDropdown"><a href="#" class="link">Inspection<br>télevisée</a></div>
+                    <div class="sousDropdown"><a href="#" class="link">Recherche<br>de fuites</a></div>
+                    <div class="sousDropdown"><a href="#" class="link">test</a></div>
                 </div>
             </li>
-            <li class="dropdown">
-                <a class="dropbtn" href="#">À propos</a>
-                <div class="dropdown-content">
-                    <a href="contact.html">Contact</a>
-                    <a href="#">Nos réalisations</a>
+
+            <li class="elementNav">
+                <a href="#" class="link">A propos</a>
+                <div class="dropdown">
+                    <div class="sousDropdown"><a href="#" class="link">Ils nous font confiance</a></div>
+                    <div class="sousDropdown"><a href="#" class="link">Contact</a></div>
                 </div>
             </li>
-            <li><a href="#">Espace clients</a></li>
+
+            <li class="elementNav"><a href="#" class="link">Espces client</a></li>
+
         </ul>
+
     </nav>
+
 
     <section class="welcome-section">
         <h1>Bienvenue chez Resology</h1>
