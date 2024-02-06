@@ -9,13 +9,38 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    
-</head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
 <body>
+<section class="sectionTop">
+    <header id="header">
+        <!-- <img src="img/logo.png" alt="Image de présentation" class="presentation-image"> -->
+        <nav class="navbar">
+            <a href="#" class="logo">RESOLOGY</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Nos services</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="webapp_cover" onclick="openMenu()">
+            <div id="menu_button">
+              <input type="checkbox" id="menu_checkbox">
+              <label for="menu_checkbox" id="menu_label">
+                <div id="menu_text_bar"></div>
+              </label>
+            </div>
+          </div>
 
-    <header>
-        <img src="img/logo.png" alt="Image de présentation" class="presentation-image">
     </header>
-
+    <video autoplay muted class="video">
+        <source src="img/0001-0190.mp4" type="video/mp4">
+    </video>
+</section>
+    <!--
     <nav class="navbar">
         <ul class="navlist">
 
@@ -45,7 +70,9 @@
         </ul>
 
     </nav>
+    -->
 
+    
 
     <section class="sectionEntrer">
         <div class="cardPresention">
@@ -124,8 +151,33 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.5399079579634!2d2.965936077045043!3d43.15618988443272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b1ad180f36d25b%3A0xd36e428dd0fe45bc!2s41%20Av.%20Paul%20Sabatier%2C%2011100%20Narbonne!5e0!3m2!1sen!2sfr!4v1705679827412!5m2!1sen!2sfr" width="100%" height="250" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
-    
+
+<a href="#header" class="lienUp" id="buttonGoTop"><span><ion-icon name="arrow-up-outline"></ion-icon></span></a>
+<script>
+    function verifierDefilement() {
+      var monElement = document.getElementById('buttonGoTop');
+      var positionDeDefilement = window.scrollY;
+
+      if (positionDeDefilement >= window.innerHeight) {
+        monElement.style.visibility = 'visible';
+        monElement.style.opacity = '1';
+      } else {
+          monElement.style.opacity = '0';
+        monElement.style.visibility = 'hidden';
+      }
+    }
+
+    window.addEventListener('scroll', verifierDefilement);
+    const navLinks = document.querySelector(".nav-links");
+    const menuButton = document.getElementById("menu_checkbox");
+
+    function openMenu() {
+        navLinks.classList.toggle('mobile-menu');
+    }
+    menuButton.addEventListener('click', openMenu);
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>
