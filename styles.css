@@ -180,122 +180,180 @@ body {
   }
 }
 .textenoir {
-  color: #1D1D1D
+  	color: #1D1D1D
 }
 .video {
-  width: 100%;
-  max-height: 100%;
+	width: 100%;
+	max-height: 100%;
 }
 
 .sectionEntrer {
-  width: 100%;
-  overflow: hidden;
-  background-color: #F5F5F5;
+	width: 100%;
+	overflow: hidden;
+	background-color: #F5F5F5;
 }
 
 .bienvenue {
-  color: rgb(255, 255, 255);
-  font-size: 3em;
-;}
+	color: rgb(255, 255, 255);
+	font-size: 3em;
+}
 .bienvenue1 {
-  width: 40%;  
+  	width: 40%;  
 }
 .elementCard {
-background-color: #1D1D1D;
+	background-color: #1D1D1D;
 }
 .elementCard1 {
-  background-color: #ffffff;
+  	background-color: #ffffff;
 }
 
 
 .cardPresention {
-  color: #F5F5F5;
-  padding: 3%;
-  margin-left: 9%;
-  margin-right: 9%;
-  max-width: 100%;
+	color: #F5F5F5;
+	padding: 3%;
+	margin-left: 9%;
+	margin-right: 9%;
+	max-width: 100%;
 }
 
 .cardPresention span {
-  font-size: 2em;
-  padding-top: 100px;
-  font-style: italic;
+	font-size: 2em;
+	padding-top: 100px;
+	font-style: italic;
 }
 
 .right {
-text-align: right;
-position: relative;
-right: 0;
-margin-left: 50%;
-
+	text-align: right;
+	position: relative;
+	right: 0;
+	margin-left: 50%;
 }
-
-
 
 .robot {
-  position: absolute;
-  width: 80%;
-  float: right;
-  transform: translate(15%, -50%);
+	position: absolute;
+	width: 80%;
+	float: right;
+	transform: translate(15%, -50%);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+/*----- FORMULAIRE -----*/
+
+.sectionFormulaire {
+    width: 100%;
+    background-color: #1D1D1D;
+    padding: 25px;
 }
 
-.modern-footer {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
-  padding: 20px;
-  background-color: #f4f4f4; /* Couleur de fond gris clair */
+.titreContact {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #f1f1f1;
 }
 
-.footer-form,
-.footer-contact{
-  padding: 20px;
-  background-color: #f4f4f4; /* Couleur de fond blanc pour chaque section */
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
-}
-.footer-map{
-  padding: 20px;
-  background-color: #f4f4f4; /* Couleur de fond blanc pour chaque section */
-  border-radius: 8px;
-  }
-
-.footer-map {
-  grid-column: span 1; /* La carte occupe une colonne sur petit écran */
-  margin: 0; /* Retire la marge pour remplir l'espace requis */
+.formHorsButton {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* Media Query pour les écrans de taille moyenne */
+.formElement {
+    width: 50%;
+    min-width: 300px;
+    padding: 10px 20px 10px 0;
+    align-items: right;
+}
 
+.formLabelInput {
+    display: flex;
+    flex-direction: column;
+    color: #f1f1f1;
+}
 
+.formInput {
+    margin: 8px 0;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    transition: 0.5s;
+}
+
+.formDiviseLongeur {
+    width: 50%;
+}
+
+.formButtonSubmit {
+    padding: 12px 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    transition: 0.3s ease;
+}
+
+.formButtonSubmit:hover {
+    transform: translateY(-8%);
+}
 
 /* ----- BUTTON TOP -----*/
 
 .lienUp {
-  color: #f1f1f1;
-  font-size: 1.5em;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  transform: translate(-50%, -50%);
-  background-color: #000;
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s ease-out;
+    color: #f1f1f1;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
 }
 
 .lienUp span{
-  position: absolute;
-  transform: translate(-50%, 25%);
+    position: absolute;
+    transform: translate(-50%, 25%);
+}
+
+/* ----- FOOTER -----*/
+
+footer {
+    width: 100%;
+    padding: 25px 8% 0 8%;
+	background-color: #f1f1f1;
+}
+
+.footerMain {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #555;
+}
+
+.footerRenseignement {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerMaps {
+    width: 30%;
+}
+
+.footerMaps iframe {
+    width: 100%;
+    height: 200px;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: center;
+}
+
+.footerBottom span {
+    margin: 3px 10px
 }
 
 /* min-width */
